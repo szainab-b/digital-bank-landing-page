@@ -11,38 +11,75 @@ body{
 }
 .bg-img{
    
-    width: 100%
+    width: 100%;
+     
 }
 .bg-mockups{
-    height: 300px;
+   
     position: absolute;
-    top: -60px;
+    top: -100px;
     left: -20px;
+   
+    
 
    
  
     
 }
-.ham{
-   
-    height: 20px;
+.bg-desktop-container{
+ max-width: 50%;
+ position: relative;
 }
+
+    
+   
+
 .header-mobile{
-   background-color:hsl(0, 100%, 100%); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px ;
+   
+}
+.ham{
+    height: 20px;
+    @media (width > 620px){
+    display: none; 
+   }
+}
+
+
+ .header-p{
    display: flex;
    flex-direction: row;
-   align-items: center;
-   justify-content: space-between ;
-   padding-left: 16px;
-   padding-right: 16px;
-   padding-bottom: 20px;
-   padding-top: 20px;
-   position: fixed;
-   top: 0px;
-   width: 100%;
-   z-index: 1;
+   gap: 10px; 
+   font-size: 1rem;
+   flex-wrap: nowrap;
 
+   @media (width <= 620px){
+    display: none;
+   }
 }
+
+.btn-header{
+    border-radius: 30px;
+    background-image: linear-gradient( hsl(136, 64%, 51% ) 60%,  hsl(192, 69%, 51%) );
+    border-style: none;
+     padding: 6px 6px 6px 6px;
+     color: white;
+
+   @media (width <= 620px){
+    display: none;
+   } 
+}
+
+ 
 .next-gen{
    text-align: center;
    font-size: 40px;
@@ -74,27 +111,72 @@ body{
 }
 .Digitalbank{
     text-align: center;
+   @media( width > 620px){
+    text-align:start;
+   }
+}
+.flex-container-div{
+     @media( width > 620px){
+        display: grid;
+        grid-auto-columns:1fr;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px
+     }  
 }
 .flex-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+     @media( width > 620px){
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: start;
+        font-size: 24px;
+     }
+
     
+}
+.digital-we-leverage-con{
+    
+    @media( width > 620px){
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: start;
+        
+    }
 }
 .Digital{
  text-align: center;
  padding-top: 100px ;
  font-size: 36px;
  font-weight: bold;
+
+ 
+
+  
 }
 .Digitalbank{
     font-size: 36px;
  font-weight: bold;
 }
+.we-leverage-p{
+    @media( width > 620px){
+    padding-top: 0px ;
+    margin-top: 0px;
+    color: red;
+     text-align:start;
+     font-size: 24px;
+}
 .we-leverage{
     text-align: center;
     padding: 16px;
     font-size: 16px;
+    
+
+ }
 }
 .img-p-container{
     width: 100%;
@@ -119,6 +201,15 @@ body{
     
 
 } 
+.second-images-container{
+   @media(width > 620px){
+    width: 100%;
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 16px;
+} 
+}
 .The-world{
     padding-left: 40px;
     color: hsl(233, 8%, 62%);
@@ -170,10 +261,38 @@ body{
     flex-direction: column;
     width: 100%;
     align-items: center;
+     @media( width > 620px){
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+        justify-content: ;
+    }
+     
+
+}
+.footer-p{
+    @media( width > 620px){
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+         align-items: center;
+    }
+}
+
+.logo-icon-container{
+    @media( width > 620px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 .light-logo{
     margin-top: 64px;
     margin-bottom: 64px;
+    @media ( width > 620px){
+        
+        margin-bottom: 0px;
+    }
 }
 .icon-flex-container{
     display: flex;
@@ -196,6 +315,10 @@ body{
    margin-bottom: 20px;
    margin-top: 16px;
  background-image: linear-gradient( hsl(136, 64%, 51% ) 60%,  hsl(192, 69%, 51%) );
+ @media ( width > 620px){
+    margin-top: 50px;
+    margin-bottom: 0px;
+ }
 
 }
 .all-rights{
@@ -220,3 +343,5 @@ body{
 }
     
 }
+
+
