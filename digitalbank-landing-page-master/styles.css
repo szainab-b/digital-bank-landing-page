@@ -254,6 +254,13 @@ body{
       color: hsl(233, 8%, 62%);
 
 }
+.flex-container{
+
+    @media ( width > 620px){
+        border: 3px solid red;
+    }
+    
+}
 .footer{
     background-color:  hsl(233, 26%, 24%);
     color: white;
@@ -266,7 +273,7 @@ body{
         flex-direction: row;
         gap: 16px;
         align-items: center;
-        justify-content: ;
+        justify-content:space-around; 
     }
      
 
@@ -275,7 +282,7 @@ body{
     @media( width > 620px){
         display: flex;
         flex-direction: row;
-        gap: 16px;
+        gap: 34px;
          align-items: center;
     }
 }
@@ -290,7 +297,7 @@ body{
     margin-top: 64px;
     margin-bottom: 64px;
     @media ( width > 620px){
-        
+        margin-top: 0px;
         margin-bottom: 0px;
     }
 }
@@ -298,13 +305,14 @@ body{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    padding-top: 32px
 }
 .icon-img{
      width: 25px;
      
 }
 .btn-footer{
-     padding-left: 45px;
+   padding-left: 45px;
    padding-right: 45px;
    padding-top: 16px;
    padding-bottom: 16px;
